@@ -36,3 +36,17 @@ for (let i = 1; i <= n; i++) {
   }
   console.log(iStair);
 }
+
+
+///// Another method to do with the same approach but different for loops initialization 
+
+for(let i = 0; i < n; i++) {
+  let iStair = '';
+  for (let j = 0; j < n - (i + 1); j++) {
+    iStair += " ";
+  }
+  for (let k = 0; k < i; k++) {
+    iStair += "#";
+  }
+  console.log(iStair);
+}
